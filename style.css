@@ -8,36 +8,43 @@ background-size: contain;
   border: 5px solid salmon;
 
 }
-.memoryMatchTitle{
+.asidePlusMain{
   display: flex;
-  border: 5px solid salmon;
-
 }
 
+
 aside{
-  width:25%;
+  width:20%;
    border: 5px solid salmon;
   border-radius:8px;
   height:75vh;
-  display:flex;
-  flex-wrap:wrap;
-
 }
 .card{
-height: 150px;
-width: 100px;
+height: 90vh;
+width: 10vh;
 position: relative;
 display: flex;
-
-
 }
+
+.gameSpace{
+  display: flex;
+}
+.row1{
+  display: flex;
+}
+.row2{
+  display: flex;
+}
+.row3{
+  display: flex;
+}
+
 .back, .front{
-    display: flex;
 position: absolute;
 height: 100%;
 width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
+background-size: contain;
+background-repeat: no-repeat;
 
 }
 .back{
