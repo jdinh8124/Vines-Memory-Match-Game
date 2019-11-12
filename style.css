@@ -1,0 +1,70 @@
+body{
+  background-image: url(/assets/images/lfz-background.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+}
+.memoryMatchTitle{
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.card{
+height: 150px;
+width: 100px;
+position: relative;
+display: flex;
+flex-direction: row;
+
+
+
+}
+.back, .front{
+position: absolute;
+height: 100%;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.back{
+  background-image: url(/assets/images/lfz-card.jpg);
+}
+.js{
+  background-image: url(/assets/images/js-logo.png);
+}
+.hidden{
+  display:none;
+}
+.php{
+    background-image: url(/assets/images/php-logo.jpeg);
+}
+.docker{
+    background-image: url(/assets/images/docker-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.github{
+    background-image: url(/assets/images/gitHub-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.htmlpic{
+    background-image: url(/assets/images/html-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mysql{
+    background-image: url(/assets/images/mysql-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.node{
+    background-image: url(/assets/images/node-logo.png);
+}
+.react{
+    background-image: url(/assets/images/react-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
