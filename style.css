@@ -5,27 +5,39 @@ background-size: contain;
 }
 .memoryMatchTitle{
   display: flex;
-  align-content: center;
-  text-align: center;
+  border: 5px solid salmon;
+
+}
+.memoryMatchTitle{
+  display: flex;
+  border: 5px solid salmon;
+
 }
 
+aside{
+  width:25%;
+   border: 5px solid salmon;
+  border-radius:8px;
+  height:75vh;
+  display:flex;
+  flex-wrap:wrap;
+
+}
 .card{
 height: 150px;
 width: 100px;
 position: relative;
 display: flex;
-flex-direction: row;
-
 
 
 }
 .back, .front{
+    display: flex;
 position: absolute;
 height: 100%;
 width: 100%;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 .back{
@@ -42,29 +54,22 @@ background-position: center;
 }
 .docker{
     background-image: url(/assets/images/docker-logo.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+
 }
 .github{
     background-image: url(/assets/images/gitHub-logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .htmlpic{
     background-image: url(/assets/images/html-logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+
 }
 .mysql{
     background-image: url(/assets/images/mysql-logo.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+
 }
 .node{
     background-image: url(/assets/images/node-logo.png);
 }
 .react{
     background-image: url(/assets/images/react-logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }

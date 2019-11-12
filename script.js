@@ -1,11 +1,11 @@
-$(document).ready(clickHandlers)
+$(document).ready(initalizeApp)
 
-  function clickHandlers(){
-$(".card").on("click", clickedCard);
+function initalizeApp(){
+  $(".card").on("click", handleCardClick);
 
 }
 
 
-function clickedCard(){
-  $(this).find('.back').addClass("hidden");
+function handleCardClick(event){
+  $(event.currentTarget).find('.back').toggleClass("hidden");
 }
