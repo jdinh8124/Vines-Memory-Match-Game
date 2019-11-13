@@ -17,6 +17,7 @@ function initalizeApp(){
     $(".modal").removeClass('showmodal');
     $(".back").removeClass("hidden");
     games_played += 1;
+    $(".gamesPlayed").text(games_played);
   });
 
 }
@@ -30,15 +31,15 @@ function handleCardClick(event){
   } else {
     secondCardClicked = $(event.currentTarget);
     attempts += 1;
-    if(attempts > 1) {displayStats();
-  }
+   displayStats();
+
   }
   if (firstCardClicked.find('.front').css('background-image') === secondCardClicked.find('.front').css('background-image')) {
     matches += 1;
     firstCardClicked = null;
     secondCardClicked = null;
     displayStats();
-    if(matches === max_matches){
+    if((matches /games_played) === max_matches){
       $(".modal").addClass("showmodal")
     }
   } else {
@@ -59,9 +60,8 @@ function calculateAccuracy(){
 
 function displayStats(){
   var acrruracyCalulation = calculateAccuracy();
-  $(".gamesPlayed").text(games_played);
   $(".gameAttempts").text(attempts);
   $(".gameAccuracy").text(acrruracyCalulation + '%');
-
+  $(".gamesPlayed").text(games_played);
 }
 // if (attempts > 1) { displayStats();
