@@ -4,6 +4,7 @@ $(document).ready(initalizeApp)
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
+var max_matches = 2;
 
 
 function initalizeApp(){
@@ -24,6 +25,10 @@ function handleCardClick(event){
     matches += 1;
     firstCardClicked = null;
     secondCardClicked = null;
+
+    // if(matches === max_matches){
+
+    // }
   } else {
     setTimeout(function () {
 
@@ -32,7 +37,5 @@ function handleCardClick(event){
       firstCardClicked = null;
       secondCardClicked = null;
     }, 1500);
-
   }
-
 }
