@@ -4,16 +4,19 @@ $(document).ready(initalizeApp)
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
-var max_matches = 2;
+var max_matches = 9;
 var attempts = 0;
-var games_played = 0;
+var games_played = 1;
 
 function initalizeApp(){
   $(".card").on("click", handleCardClick);
   $(".refreshButton").click(function () {
     location.reload();
   });
-  $(".buttonPlayAgain").click(function () { $(".modal").removeClass('showmodal');
+  $(".buttonPlayAgain").click(function () {
+    $(".modal").removeClass('showmodal');
+    $(".back").removeClass("hidden");
+    games_played += 1;
   });
 
 }
@@ -34,7 +37,7 @@ function handleCardClick(event){
     matches += 1;
     firstCardClicked = null;
     secondCardClicked = null;
-
+    displayStats();
     if(matches === max_matches){
       $(".modal").addClass("showmodal")
     }
@@ -50,14 +53,15 @@ function handleCardClick(event){
 }
 
 function calculateAccuracy(){
-  var dividedStats = (matches / (attempts - 1) * 100).toFixed(2);
+  var dividedStats = (matches /attempts  * 100).toFixed(2);
   return dividedStats;
 }
 
 function displayStats(){
   var acrruracyCalulation = calculateAccuracy();
-  $(".gamesPlayed").text();
+  $(".gamesPlayed").text(games_played);
   $(".gameAttempts").text(attempts);
   $(".gameAccuracy").text(acrruracyCalulation + '%');
 
 }
+// if (attempts > 1) { displayStats();
