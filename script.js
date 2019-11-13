@@ -17,6 +17,7 @@ function initalizeApp(){
     $(".modal").removeClass('showmodal');
     $(".back").removeClass("hidden");
     games_played += 1;
+    resetStats();
     $(".gamesPlayed").text(games_played);
   });
 
@@ -39,7 +40,7 @@ function handleCardClick(event){
     firstCardClicked = null;
     secondCardClicked = null;
     displayStats();
-    if((matches /games_played) === max_matches){
+    if((matches) === max_matches){
       $(".modal").addClass("showmodal")
     }
   } else {
@@ -64,4 +65,11 @@ function displayStats(){
   $(".gameAccuracy").text(acrruracyCalulation + '%');
   $(".gamesPlayed").text(games_played);
 }
-// if (attempts > 1) { displayStats();
+
+function resetStats(){
+  matches = null;
+  attempts = null;
+  var acrruracyCalulation = calculateAccuracy();
+  $(".gameAttempts").text(0);
+  $(".gameAccuracy").text( 0 + '%');
+}
