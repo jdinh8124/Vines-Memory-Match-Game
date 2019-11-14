@@ -43,7 +43,7 @@ function initalizeApp(){
   });
   $(".buttonPlayAgain").click(function () {
     //need a remove cards function
-    $("").remove();
+    $(".front, .back").remove();
     shuffle(imagesArray);
     makeCards(imagesArray);
     $(".modal").removeClass('showmodal');
