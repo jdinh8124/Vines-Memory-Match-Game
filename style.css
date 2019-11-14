@@ -1,8 +1,8 @@
 body{
 background-repeat: no-repeat;
-background-color: darkcyan;
+background-size: stretch;
+  background-image: url(/assets/images/vineminifest_1.png);
 margin: 0;
-
 }
 .memoryMatchTitle{
   border: 2px solid salmon;
