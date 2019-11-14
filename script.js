@@ -42,6 +42,10 @@ function initalizeApp(){
     location.reload();
   });
   $(".buttonPlayAgain").click(function () {
+    //need a remove cards function
+    $("").remove();
+    shuffle(imagesArray);
+    makeCards(imagesArray);
     $(".modal").removeClass('showmodal');
     $(".back").removeClass("hidden");
     games_played += 1;
@@ -140,7 +144,5 @@ function shuffle(array) {
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
-
   return array;
-
 }
