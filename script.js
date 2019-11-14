@@ -55,6 +55,9 @@ function handleCardClick(event){
   if(lockBoard){
     return;
   }
+  if ($(event.currentTarget).find(".back").hasClass('hidden')) {
+    return;
+  }
   $(event.currentTarget).find('.back').addClass("hidden");
   if (firstCardClicked === null) {
     firstCardClicked = $(event.currentTarget);
