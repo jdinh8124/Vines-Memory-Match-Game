@@ -1,5 +1,5 @@
 body{
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-image: url(/assets/images/vineminifest_1.png);
   margin: 0;
@@ -38,8 +38,8 @@ aside{
 
 }
 .card{
-  height: 26vmin;
-  width: 19vmin;
+  height: 23vmin;
+  width: 14vmin;
   position: relative;
   margin: 1% 3%;
 }
@@ -59,8 +59,8 @@ aside{
 .back, .front{
   position: absolute;
   height: 100%;
-  width: 100%;
-  background-size: contain;
+  width: 11vw;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25% 10%;
 }
