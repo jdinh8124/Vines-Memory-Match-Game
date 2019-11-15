@@ -1,30 +1,14 @@
 $(document).ready(initalizeApp)
 
 var imagesArray = [
-  'wednesday',
-  'okGif',
-  'lying',
-  'chickenGif',
-  'dancingGif',
-  'merryGif',
-  'highfiveGif',
-  'hatersGif',
-  'mcdsGif',
-  'wednesday',
-  'okGif',
-  'lying',
-  'chickenGif',
-  'dancingGif',
-  'merryGif',
-  'highfiveGif',
-  'hatersGif',
-  'mcdsGif',
+  'wednesday','okGif','lying', 'chickenGif', 'dancingGif', 'merryGif', 'highfiveGif', 'hatersGif', 'mcdsGif',
+  'wednesday', 'okGif','lying','chickenGif', 'dancingGif', 'merryGif', 'highfiveGif','hatersGif', 'mcdsGif',
 ];
 
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
-var max_matches = 1;
+var max_matches = 9;
 var attempts = 0;
 var games_played = 1;
 var lockBoard = false;

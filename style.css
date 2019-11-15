@@ -6,29 +6,27 @@ body{
   overflow: hidden;
 }
 .memoryMatchTitle{
-  border: 2px solid salmon;
   height: 15vh;
-  font-size: 7vh;
+  font-size: 11.5vmin;
   text-align: center;
-  font-family: c;
+  font-family: 'Lalezar', cursive;
+  position: relative;
+  bottom: 10%;
 }
 .asidePlusMain{
   display: flex;
   flex-direction: row;
   height: 80vh;
-
 }
 
 aside{
   width:15%;
-  border: 2px solid salmon;
   border-radius:8px;
   height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .gameSpace{
@@ -41,15 +39,24 @@ aside{
   height: 23vmin;
   width: 14vmin;
   position: relative;
-  margin: 1% 3%;
+  margin: 1% 3.75%;
 }
 .asideDiv{
-  background-color: tan;
   width: 25vmin;
   height: 10vmin;
-  border: 3px solid blue;
+  border: 10px solid white;
+  background-color: black;
+  color: white;
   text-align: center;
   font-size: 4vmin;
+}
+.asideDiv:nth-child(odd){
+  line-height: 9vmin;
+  font-size: 6vmin;
+}
+.gameData{
+  position: relative;
+  font-size: 6vmin;
 }
 .row{
   display: flex;
@@ -59,7 +66,7 @@ aside{
 .back, .front{
   position: absolute;
   height: 100%;
-  width: 11vw;
+  width: 160%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25% 10%;
@@ -71,7 +78,7 @@ aside{
   background-image: url(/assets/images/Its\ wednesday.gif);
 }
 .hidden{
-  display:none;
+  display: none;
 }
 .okGif{
   background-image: url(/assets/images/ok.gif);
