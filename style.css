@@ -10,6 +10,7 @@ body{
   height: 15vh;
   font-size: 7vh;
   text-align: center;
+  font-family: c;
 }
 .asidePlusMain{
   display: flex;
