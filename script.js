@@ -1,40 +1,36 @@
 $(document).ready(initalizeApp)
 
 var imagesArray = [
-  'js',
-  'php',
-  'docker',
-  'github',
-  'htmlpic',
-  'mysql',
-  'node',
-  'react',
-  'css',
-  'js',
-  'php',
-  'docker',
-  'github',
-  'htmlpic',
-  'mysql',
-  'node',
-  'react',
-  'css',
+  'wednesday',
+  'okGif',
+  'lying',
+  'chickenGif',
+  'dancingGif',
+  'merryGif',
+  'highfiveGif',
+  'hatersGif',
+  'mcdsGif',
+  'wednesday',
+  'okGif',
+  'lying',
+  'chickenGif',
+  'dancingGif',
+  'merryGif',
+  'highfiveGif',
+  'hatersGif',
+  'mcdsGif',
 ];
-
-
-
 
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
-var max_matches = 9;
+var max_matches = 1;
 var attempts = 0;
 var games_played = 1;
 var lockBoard = false;
 
 function initalizeApp(){
   shuffle(imagesArray);
-  // $(".gameSpace").sortable({ 'update':  });
   makeCards(imagesArray);
 
   $(".card").on("click", handleCardClick);
@@ -42,7 +38,6 @@ function initalizeApp(){
     location.reload();
   });
   $(".buttonPlayAgain").click(function () {
-    //need a remove cards function
     $(".front, .back").remove();
     shuffle(imagesArray);
     makeCards(imagesArray);
@@ -57,6 +52,7 @@ function initalizeApp(){
 
 
 function handleCardClick(event){
+
   if(lockBoard){
     return;
   }
@@ -65,12 +61,12 @@ function handleCardClick(event){
   }
   $(event.currentTarget).find('.back').addClass("hidden");
   if (firstCardClicked === null) {
-    firstCardClicked = $(event.currentTarget);
-    return;
+      firstCardClicked = $(event.currentTarget);
+      return;
   } else {
     secondCardClicked = $(event.currentTarget);
     attempts += 1;
-   displayStats();
+    displayStats();
     lockBoard = true;
   }
   if (firstCardClicked.find('.front').css('background-image') === secondCardClicked.find('.front').css('background-image')) {
@@ -80,11 +76,10 @@ function handleCardClick(event){
     displayStats();
     lockBoard = false;
     if((matches) === max_matches){
-      $(".modal").addClass("showmodal")
+    $(".modal").addClass("showmodal")
     }
   } else {
     setTimeout(function () {
-
       firstCardClicked.find('.back').removeClass("hidden");
       secondCardClicked.find('.back').removeClass("hidden");
       firstCardClicked = null;
@@ -113,7 +108,6 @@ function resetStats(){
   $(".gameAccuracy").text( 0 + '%');
 }
 
-
 function makeCards(imageArray) {
   var foundImg;
   var pictureElements;
@@ -127,19 +121,12 @@ function makeCards(imageArray) {
   }
   return foundImg;
 }
-
 function shuffle(array) {
-
   var currentIndex = array.length;
   var temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
-
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
