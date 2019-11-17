@@ -33,7 +33,6 @@ aside{
   width: 85%;
   display: flex;
   flex-direction: column;
-
 }
 .card{
   height: 23vmin;
@@ -44,8 +43,6 @@ aside{
 .card:hover{
   cursor: pointer;
 }
-
-
 .overlay {
   position: absolute;
   top: 0;
@@ -58,12 +55,9 @@ aside{
   transition: .5s ease;
   background-color: #008CBA;
 }
-
 .card:hover .overlay {
   opacity: 1;
 }
-
-
 .asideDiv{
   width: 25vmin;
   height: 10vmin;
@@ -141,14 +135,12 @@ aside{
   visibility: hidden;
   transform: scale(1.1);
     }
-
 .showmodal {
   opacity: 1;
   visibility: visible;
   transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
-
 .buttonPlayAgain{
   position: relative;
   left: 3vmin;
