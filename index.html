@@ -7,7 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <title>Memory Match | James Dinh</title>
   <script src="/script.js"></script>
   <link href="/style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Calistoga|Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Francois+One|Fredoka+One|Prata&display=swap" rel="stylesheet">
 <body>
   <header class="memoryMatchTitle">Vines Memory Match Game</header>
   <div class="asidePlusMain">
@@ -21,6 +22,7 @@
       <div class="asideDiv gameAccuracy">0%</div>
   </aside>
     <main class="gameSpace">
+      <!-- There are three rows, cards are static, but the front and backs are dynamic -->
       <div class="row">
         <div class="card" id="card0" data-cardtype="">
         </div>
@@ -67,11 +69,18 @@
   </div>
   <div class="modal">
     <div class="modal-content">
+      <!-- I have a youtube video linked that pops-up after you win in the finishing modal -->
       <iframe width="360" height="255" src="https://www.youtube.com/embed/1JOS0GHFmBk" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <button class="buttonPlayAgain">Play Again!</button>
     <button class="refreshButton">Refresh</button>
   </div>
+  </div>
+  <!-- This is the starting modal div -->
+  <div class="overlay-text">
+    <h1 class="fontStart">This Game Is Dedicated to the Culture of Vine</h1>
+    <img class="ripImg" src="assets/images/new-RIP (1).jpg">
+    <h1 class="fontStart">Click Anywhere To Begin</h1>
   </div>
 </body>
 </html>

@@ -14,9 +14,14 @@ var games_played = 1;
 var lockBoard = false;
 
 function initalizeApp(){
+  //dynamically make card fronts/back
   shuffle(imagesArray);
   makeCards(imagesArray);
-
+  // Modal popup, goes away with click
+  $(".overlay-text").on("click", function(){
+    $(".overlay-text").addClass("hidden").removeClass("overlay-text")
+  })
+  //Gives player the option to play again or refresh completely
   $(".card").on("click", handleCardClick);
   $(".refreshButton").click(function () {
     location.reload();
@@ -36,7 +41,7 @@ function initalizeApp(){
 
 
 function handleCardClick(event){
-
+  //The Lockboard if statements are to prevent the player from clicking on cards when the cards are being matched
   if(lockBoard){
     return;
   }
@@ -53,6 +58,7 @@ function handleCardClick(event){
     displayStats();
     lockBoard = true;
   }
+  //Checking to see if the fronts of the cards are the same to match
   if (firstCardClicked.find('.front').css('background-image') === secondCardClicked.find('.front').css('background-image')) {
     matches += 1;
     firstCardClicked = null;
@@ -72,7 +78,7 @@ function handleCardClick(event){
     }, 1500);
   }
 }
-
+//Math for the Side Div are bellow
 function calculateAccuracy(){
   var dividedStats = (matches /attempts  * 100).toFixed(2);
   return dividedStats;
@@ -91,7 +97,7 @@ function resetStats(){
   $(".gameAttempts").text(0);
   $(".gameAccuracy").text( 0 + '%');
 }
-
+  //dynamically create front and back divs to attatched to the cards on the HTML
 function makeCards(imageArray) {
   var foundImg;
   var pictureElements;
@@ -105,6 +111,7 @@ function makeCards(imageArray) {
   }
   return foundImg;
 }
+  //function to create shuffled cards each round
 function shuffle(array) {
   var currentIndex = array.length;
   var temporaryValue, randomIndex;
