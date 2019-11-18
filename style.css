@@ -21,7 +21,6 @@ body{
 aside{
   width:15%;
   border-radius:8px;
-  height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +47,6 @@ aside{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -134,7 +132,6 @@ aside{
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
@@ -191,11 +188,11 @@ aside{
 }
 .fontStart{
   display: absolute;
-  font-size: 5rem;
+  font-size: 7vh;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
 }
 .ripImg{
   position: relative;
-  left: 35%;
+  left: 33vw;
 }
