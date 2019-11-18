@@ -4,7 +4,6 @@ var imagesArray = [
   'wednesday','okGif','lying', 'chickenGif', 'dancingGif', 'merryGif', 'highfiveGif', 'hatersGif', 'mcdsGif',
   'wednesday', 'okGif','lying','chickenGif', 'dancingGif', 'merryGif', 'highfiveGif','hatersGif', 'mcdsGif',
 ];
-
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
@@ -14,6 +13,9 @@ var games_played = 1;
 var lockBoard = false;
 
 function initalizeApp(){
+  //Added relevant background music
+  var backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
+      backAudio.play();
   //dynamically make card fronts/back
   shuffle(imagesArray);
   makeCards(imagesArray);
@@ -67,7 +69,7 @@ function handleCardClick(event){
     lockBoard = false;
     if((matches) === max_matches){
     $(".modal").addClass("showmodal")
-    }
+  }
   } else {
     setTimeout(function () {
       firstCardClicked.find('.back').removeClass("hidden");
