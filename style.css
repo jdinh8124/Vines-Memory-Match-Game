@@ -74,6 +74,7 @@ aside{
 }
 .row{
   display: flex;
+  height: 100%;
 }
 
 .back, .front{
@@ -131,7 +132,6 @@ aside{
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
@@ -188,11 +188,11 @@ aside{
 }
 .fontStart{
   display: absolute;
-  font-size: 5rem;
+  font-size: 7vh;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
 }
 .ripImg{
   position: relative;
-  left: 35%;
+  left: 33vw;
 }
