@@ -21,7 +21,6 @@ body{
 aside{
   width:15%;
   border-radius:8px;
-  height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +47,6 @@ aside{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -76,7 +74,6 @@ aside{
 }
 .row{
   display: flex;
-  height: 100%;
 }
 
 .back, .front{
