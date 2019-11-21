@@ -180,7 +180,7 @@ aside{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 1;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(0, 0, 0, 1);
