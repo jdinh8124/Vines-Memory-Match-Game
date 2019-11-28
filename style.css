@@ -238,7 +238,7 @@ aside{
 }
 
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 769px){
 .memoryMatchTitle{
   display: none;
 }
@@ -270,7 +270,7 @@ aside{
   height: 16vw;
   width: 8vw;
   position: relative;
-  margin: 10vw 3.75vw;
+
 }
 .asideDiv:nth-child(even){
   font-size: 15px;
@@ -296,19 +296,44 @@ aside{
 
 }
 
-
-
-
-/* @media only screen and (max-width: 380px){
-.memoryMatchTitle{
-  display: none;
-}
-.asideDiv{
-  font-size: 10px;
-}
+ @media only screen and (max-width: 581px){
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 30px;
+  font-size: 20px;
+}
+.asideDiv:nth-child(even){
+  font-size: 13px;
+}
 }
 
-} */
+ @media only screen and (max-width: 537px){
+.asideDiv:nth-child(odd){
+  line-height: 10vmin;
+  font-size: 20px;
+}
+.asideDiv:nth-child(even){
+  font-size: 10px;
+  line-height: 10vmin;
+}
+}
+
+ @media only screen and (max-width: 503px){
+.asideDiv:nth-child(odd){
+  line-height: 10vmin;
+  font-size: 18px;
+}
+.asideDiv:nth-child(even){
+  line-height: 10vmin;
+  font-size: 8px;
+}
+.asideDiv:nth-child(2){
+  line-height: 5vmin;
+  font-size: 10px;
+}
+.card{
+  height: 15vw;
+  width: 9vw;
+  margin: 15vw 3.75vw;
+
+}
+}
