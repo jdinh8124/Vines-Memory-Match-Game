@@ -67,6 +67,7 @@ function handleCardClick(event){
     secondCardClicked = null;
     displayStats();
     lockBoard = false;
+    //unnecessry false lockboard
     if((matches) === max_matches){
     $(".modal").addClass("showmodal")
   }
