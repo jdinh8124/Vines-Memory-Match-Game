@@ -1,13 +1,14 @@
 body{
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/assets/images/vineminifest_1.png);
+  background-color: #00b386;
+  background-image: url(assets/images/vineminifest_1.png);
   margin: 0;
   overflow: hidden;
 }
 .memoryMatchTitle{
   height: 15vh;
-  font-size: 11.5vmin;
+  font-size: 95px;
   text-align: center;
   font-family: 'Prata', serif;
   position: relative;
@@ -33,8 +34,8 @@ aside{
   flex-direction: column;
 }
 .card{
-  height: 23vmin;
-  width: 14vmin;
+  height: 10vw;
+  width: 6vw;
   position: relative;
   margin: 1% 3.75%;
 }
@@ -56,21 +57,21 @@ aside{
   opacity: 1;
 }
 .asideDiv{
-  width: 25vmin;
-  height: 10vmin;
+  width: 13vw;
+  height: 10vw;
   border: 10px solid white;
   background-color: black;
   color: white;
   text-align: center;
-  font-size: 3.5vmin;
+  font-size: 35px;
 }
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 6vmin;
+  font-size: 55px;
 }
 .gameData{
   position: relative;
-  font-size: 6vmin;
+  font-size: 50px;
 }
 .row{
   display: flex;
@@ -80,7 +81,7 @@ aside{
 .back, .front{
   position: absolute;
   height: 100%;
-  width: 160%;
+  width: 170%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25% 10%;
@@ -188,11 +189,126 @@ aside{
 }
 .fontStart{
   display: absolute;
-  font-size: 7vh;
+  font-size: 80px;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
 }
 .ripImg{
   position: relative;
-  left: 33vw;
+  left: 36%;
 }
+
+/* @media only screen and (max-width: 2062px){
+
+} */
+
+@media only screen and (max-width: 1712px){
+  .ripImg{
+  left: 33%;
+  }
+  .fontStart{
+  font-size: 60px;
+}
+}
+
+@media only screen and (max-width: 1315px){
+.memoryMatchTitle{
+  font-size: 65px;
+}
+.asideDiv{
+  font-size: 25px;
+}
+.gameData{
+  font-size: 35px;
+}
+}
+
+@media only screen and (max-width: 915px){
+.memoryMatchTitle{
+  font-size: 50px;
+}
+.asideDiv{
+  font-size: 20px;
+}
+.asideDiv:nth-child(odd){
+  line-height: 9vmin;
+  font-size: 40px;
+}
+
+}
+
+
+@media only screen and (max-width: 720px){
+.memoryMatchTitle{
+  display: none;
+}
+.asidePlusMain{
+  display: flex;
+  flex-direction: column;
+}
+aside{
+  width:100%;
+  border-radius:8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family:  cursive;
+}
+.gameData{
+  position: relative;
+  font-size: 0;
+}
+.gameSpace{
+  margin-top: 5vw;
+  width: 110vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  height: 16vw;
+  width: 8vw;
+  position: relative;
+  margin: 10vw 3.75vw;
+}
+.asideDiv:nth-child(even){
+  font-size: 15px;
+  line-height: 60px;
+}
+.asideDiv:nth-child(odd){
+  line-height: 9vmin;
+  font-size: 28px;
+}
+.asideDiv:nth-child(2){
+  line-height: 30px;
+}
+  .ripImg{
+  text-align: justify;
+  width: 80vw;
+  left: 8%;
+  }
+  .fontStart{
+  font-size: 23px;
+  right: 5vw;
+}
+
+
+}
+
+
+
+
+/* @media only screen and (max-width: 380px){
+.memoryMatchTitle{
+  display: none;
+}
+.asideDiv{
+  font-size: 10px;
+}
+.asideDiv:nth-child(odd){
+  line-height: 9vmin;
+  font-size: 30px;
+}
+
+} */
