@@ -209,6 +209,9 @@ aside{
   .fontStart{
   font-size: 60px;
 }
+  .row{
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 1315px){
@@ -239,6 +242,9 @@ aside{
 
 
 @media only screen and (max-width: 769px){
+  .asidePlusMain{
+  height: 100vh;
+}
 .memoryMatchTitle{
   display: none;
 }
@@ -297,6 +303,9 @@ aside{
 }
 
  @media only screen and (max-width: 581px){
+/* aside{
+
+} */
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
   font-size: 20px;
@@ -331,9 +340,31 @@ aside{
   font-size: 10px;
 }
 .card{
-  height: 15vw;
-  width: 9vw;
-  margin: 15vw 3.75vw;
+  height: 22vw;
+  width: 13vw;
+  margin-left: 7vw;
+  right: 4.5%;
+}
+.row{
+  height: 33%;
+  width: 94%;
+  justify-content: space-between;
+}
+  .ripImg{
+  text-align: center;
+  top: 40vw;
+  width: 80vw;
+  left: 9%;
+  }
+  .fontStart{
+  position: relative;
+  top: 40vw;
+  font-size: 25px;
+  left: 0vw;
+}
 
+.gameSpace{
+  height: 88%;
+  width:  100%;
 }
 }
