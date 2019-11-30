@@ -401,9 +401,10 @@ aside{
   right: 4.5%;
 }
 .row{
-  height: 47%;
+  height: 25%;
   width: 90%;
   justify-content: space-between;
+  margin-top: 0;
 }
   .ripImg{
   text-align: center;
