@@ -260,8 +260,8 @@ aside{
   font-size: 35px;
 }
 .card{
-  height: 11vw;
-  width: 6vw;
+  height: 13vw;
+  width: 7vw;
   margin: 0% 3.75%;
 }
   .fontStart{
@@ -335,15 +335,17 @@ aside{
 
 }
 
-@media only screen and (max-width: 758px){
+@media only screen and (max-width: 729px){
 .asideDiv:nth-child(2){
   line-height: 4vw;
 }
+
+
 }
  @media only screen and (max-width: 581px){
-/* aside{
-
-} */
+.gameSpace {
+    height: 79vw;
+}
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
   font-size: 20px;
@@ -371,9 +373,9 @@ aside{
 }
 }
 
- @media only screen and (max-width: 414px){
+ @media only screen and (max-width: 654px){
 .asideDiv{
-  border: 6px solid white;
+  border: 4px solid white;
 }
 .asideDiv:nth-child(odd){
   line-height: 10vmin;
@@ -381,7 +383,7 @@ aside{
 }
 .asideDiv:nth-child(even){
   line-height: 10vmin;
-  font-size: 9px;
+  font-size: 10px;
 }
 .asideDiv:nth-child(2){
   line-height: 5vmin;
