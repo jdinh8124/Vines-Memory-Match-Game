@@ -230,13 +230,14 @@ aside{
     height: 11vw;
     width: 6vw;
   }
+
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-
+  font-size: 45px;
 }
-/* .asideDiv:nth-child(2){
+.asideDiv:nth-child(2){
   line-height: 30px;
-} */
+}
 }
 @media only screen and (max-width: 1525px){
   .ripImg{
@@ -248,7 +249,7 @@ aside{
 }
 @media only screen and (max-width: 1315px){
 .memoryMatchTitle{
-  font-size: 65px;
+  font-size: 55px;
 }
 .asideDiv{
   font-size: 25px;
@@ -270,7 +271,7 @@ aside{
 }
 
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 768px){
 .memoryMatchTitle{
   display: none;
 }
@@ -364,7 +365,11 @@ aside{
 }
 
 
-
+@media only screen and (max-width: 540px){
+.asideDiv:nth-child(2){
+  line-height: 4vw;
+}
+}
 
  @media only screen and (max-width: 464px){
 .asideDiv{
@@ -391,7 +396,7 @@ aside{
 .card{
   height: 24vw;
   width: 14vw;
-  margin-left: 9vw;
+  margin-left: 7vw;
   margin-top: 8px;
   right: 4.5%;
 }
@@ -424,5 +429,4 @@ aside{
 aside{
   width: 100%;
 }
-
 }
