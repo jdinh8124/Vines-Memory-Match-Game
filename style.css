@@ -70,10 +70,10 @@ aside{
 }
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 4vw;
+  font-size: 3.75vw;
 }
 .asideDiv:nth-child(even){
-  line-height: 9vmin;
+  line-height: 8.75vmin;
 }
 .gameData{
   position: relative;
@@ -230,16 +230,13 @@ aside{
     height: 11vw;
     width: 6vw;
   }
-  .asideDiv{
-  font-size: 24px;
-}
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 45px;
+
 }
-.asideDiv:nth-child(2){
+/* .asideDiv:nth-child(2){
   line-height: 30px;
-}
+} */
 }
 @media only screen and (max-width: 1525px){
   .ripImg{
@@ -273,7 +270,7 @@ aside{
 }
 
 
-@media only screen and (max-width: 969px){
+@media only screen and (max-width: 1050px){
 .memoryMatchTitle{
   display: none;
 }
@@ -342,7 +339,7 @@ aside{
 
 
 }
- @media only screen and (max-width: 581px){
+ @media only screen and (max-width: 461px){
 .gameSpace {
     height: 79vw;
 }
@@ -355,7 +352,7 @@ aside{
 }
 }
 
- @media only screen and (max-width: 537px){
+ @media only screen and (max-width: 628px){
 .asideDiv:nth-child(odd){
   line-height: 10vmin;
   font-size: 20px;
@@ -367,13 +364,9 @@ aside{
 }
 
 
-@media only screen and (max-width: 540px){
-.asideDiv:nth-child(2){
-  line-height: 4vw;
-}
-}
 
- @media only screen and (max-width: 654px){
+
+ @media only screen and (max-width: 464px){
 .asideDiv{
   border: 4px solid white;
 }
@@ -398,7 +391,7 @@ aside{
 .card{
   height: 24vw;
   width: 14vw;
-  margin-left: 7vw;
+  margin-left: 9vw;
   margin-top: 8px;
   right: 4.5%;
 }
@@ -431,4 +424,5 @@ aside{
 aside{
   width: 100%;
 }
+
 }
