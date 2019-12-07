@@ -62,7 +62,7 @@ aside{
 .asideDiv{
   width: 13vw;
   height: 10vw;
-  border: 10px solid white;
+  border: 7px solid white;
   background-color: black;
   color: white;
   text-align: center;
@@ -77,7 +77,7 @@ aside{
 }
 .gameData{
   position: relative;
-  font-size: 50px;
+  font-size: 2.50vw;
 }
 .row{
   display: flex;
@@ -233,7 +233,7 @@ aside{
 
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 45px;
+
 }
 .asideDiv:nth-child(2){
   line-height: 30px;
@@ -249,17 +249,17 @@ aside{
 }
 @media only screen and (max-width: 1315px){
 .memoryMatchTitle{
-  font-size: 55px;
+  font-size: 35px;
 }
 .asideDiv{
   font-size: 25px;
 }
-.gameData{
-  font-size: 35px;
-}
+/* .gameData{
+  font-size: 30px;
+} */
 .card{
-  height: 13vw;
-  width: 7vw;
+  height: 12vw;
+  width: 6.25vw;
   margin: 0% 3.75%;
 }
   .fontStart{
@@ -271,7 +271,48 @@ aside{
 }
 
 
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 817px){
+.asideDiv:nth-child(2){
+  line-height: 4vw;
+}
+.asideDiv{
+  font-size: 18px;
+}
+
+}
+
+
+ @media only screen and (max-width: 628px){
+.asideDiv:nth-child(odd){
+  line-height: 10vmin;
+  font-size: 20px;
+}
+.asideDiv:nth-child(even){
+  font-size: 10px;
+  line-height: 10vmin;
+}
+}
+
+
+@media only screen and (max-width: 540px){
+.asideDiv:nth-child(2){
+  line-height: 4vw;
+}
+}
+ @media only screen and (max-width: 415px){
+.gameSpace {
+    height: 79vw;
+}
+.asideDiv:nth-child(odd){
+  line-height: 9vmin;
+  font-size: 20px;
+}
+.asideDiv:nth-child(even){
+  font-size: 13px;
+}
+}
+ @media only screen and (max-width: 415px){
 .memoryMatchTitle{
   display: none;
 }
@@ -329,50 +370,7 @@ aside{
   font-size: 23px;
   right: 6vw;
 }
-
-
-}
-
-@media only screen and (max-width: 729px){
-.asideDiv:nth-child(2){
-  line-height: 4vw;
-}
-
-
-}
- @media only screen and (max-width: 461px){
-.gameSpace {
-    height: 79vw;
-}
-.asideDiv:nth-child(odd){
-  line-height: 9vmin;
-  font-size: 20px;
-}
-.asideDiv:nth-child(even){
-  font-size: 13px;
-}
-}
-
- @media only screen and (max-width: 628px){
-.asideDiv:nth-child(odd){
-  line-height: 10vmin;
-  font-size: 20px;
-}
-.asideDiv:nth-child(even){
-  font-size: 10px;
-  line-height: 10vmin;
-}
-}
-
-
-@media only screen and (max-width: 540px){
-.asideDiv:nth-child(2){
-  line-height: 4vw;
-}
-}
-
- @media only screen and (max-width: 464px){
-.asideDiv{
+  .asideDiv{
   border: 4px solid white;
 }
 .asideDiv:nth-child(odd){
