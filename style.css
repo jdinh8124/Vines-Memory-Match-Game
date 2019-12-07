@@ -41,7 +41,13 @@ aside{
   width: 5vw;
   position: relative;
   margin: 1% 3.75%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+
 }
+
 .card:hover{
   cursor: pointer;
 }
@@ -92,13 +98,14 @@ aside{
   background-repeat: no-repeat;
   border-radius: 25% 10%;
 }
+.front{
+
+}
 /* This is where all of the images for the cards are */
 .back{
   background-image: url(/assets/images/vine.png);
 }
-.back:hover{
-    transform: rotateY(8deg);
-}
+
 .wednesday{
   background-image: url(/assets/images/Its\ wednesday.gif);
 }
@@ -205,6 +212,12 @@ aside{
   left: 36%;
 }
 
+.flip{
+transform: rotateY(180deg);
+ perspective: 1000px;
+   transition: transform 0.8s;
+}
+
 @media only screen and (max-width: 2980px){
     .card{
     height: 10vw;
@@ -270,8 +283,6 @@ aside{
   }
 }
 
-
-
 @media only screen and (max-width: 817px){
 .asideDiv:nth-child(2){
   line-height: 4vw;
@@ -279,10 +290,7 @@ aside{
 .asideDiv{
   font-size: 18px;
 }
-
 }
-
-
  @media only screen and (max-width: 628px){
 .asideDiv:nth-child(odd){
   line-height: 10vmin;
@@ -293,23 +301,9 @@ aside{
   line-height: 10vmin;
 }
 }
-
-
 @media only screen and (max-width: 540px){
 .asideDiv:nth-child(2){
   line-height: 4vw;
-}
-}
- @media only screen and (max-width: 415px){
-.gameSpace {
-    height: 79vw;
-}
-.asideDiv:nth-child(odd){
-  line-height: 9vmin;
-  font-size: 20px;
-}
-.asideDiv:nth-child(even){
-  font-size: 13px;
 }
 }
  @media only screen and (max-width: 415px){
@@ -334,44 +328,9 @@ aside{
   position: relative;
   font-size: 0;
 }
-.gameSpace{
-  width: 100vw;
-  height: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-.row{
-  width: 97vw;
-  height: 100%;
-  margin-top: 50px;
-}
-.card{
-  height: 17vw;
-  width: 8.5vw;
-  position: relative;
-
-}
-.asideDiv:nth-child(even){
-  font-size: 15px;
-  line-height: 10vw;
-}
-.asideDiv:nth-child(odd){
-  line-height: 9vw;
-  font-size: 28px;
-}
-.asideDiv:nth-child(2){
-  line-height: 10vw;
-}
-  .ripImg{
-  width: 80vw;
-  left: 8%;
-  }
   .fontStart{
   font-size: 23px;
   right: 6vw;
-}
-  .asideDiv{
-  border: 4px solid white;
 }
 .asideDiv:nth-child(odd){
   line-height: 10vmin;
@@ -416,15 +375,14 @@ aside{
   font-size: 16px;
   right:1vw;
 }
-
 .gameSpace{
   height: 80%;
   width:  100%;
+    display: flex;
+  flex-direction: column;
 }
 .asideDiv{
   width:13vw;
-}
-aside{
-  width: 100%;
+  border: 4px solid white;
 }
 }
