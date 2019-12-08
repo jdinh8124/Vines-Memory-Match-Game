@@ -15,13 +15,13 @@ var lockBoard = false;
 function initalizeApp(){
   //Added relevant background music
   var backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
-      backAudio.play();
   //dynamically make card fronts/back
   shuffle(imagesArray);
   makeCards(imagesArray);
   // Modal popup, goes away with click
   $(".overlay-text").on("click", function(){
-    $(".overlay-text").addClass("hidden").removeClass("overlay-text")
+    $(".overlay-text").addClass("hidden").removeClass("overlay-text"),
+      backAudio.play();
   })
   //Gives player the option to play again or refresh completely
   $(".card").on("click", handleCardClick);
