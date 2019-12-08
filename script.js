@@ -7,7 +7,7 @@ var imagesArray = [
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
-var max_matches = 9;
+var max_matches = 1;
 var attempts = 0;
 var games_played = 1;
 var lockBoard = false;
@@ -67,6 +67,7 @@ function handleCardClick(event){
     secondCardClicked = null;
     displayStats();
     lockBoard = false;
+    //unnecessry false lockboard
     if((matches) === max_matches){
     $(".modal").addClass("showmodal")
   }

@@ -1,13 +1,17 @@
 body{
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/assets/images/vineminifest_1.png);
+  background-color: #00b386;
+  background-image: url(assets/images/vineminifest_1.png);
   margin: 0;
   overflow: hidden;
 }
+/* .back{
+  opacity: 0;
+} */
 .memoryMatchTitle{
   height: 15vh;
-  font-size: 11.5vmin;
+  font-size: 105px;
   text-align: center;
   font-family: 'Prata', serif;
   position: relative;
@@ -33,11 +37,17 @@ aside{
   flex-direction: column;
 }
 .card{
-  height: 23vmin;
-  width: 14vmin;
+  height: 9vw;
+  width: 5vw;
   position: relative;
   margin: 1% 3.75%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+
 }
+
 .card:hover{
   cursor: pointer;
 }
@@ -56,21 +66,24 @@ aside{
   opacity: 1;
 }
 .asideDiv{
-  width: 25vmin;
-  height: 10vmin;
-  border: 10px solid white;
+  width: 13vw;
+  height: 10vw;
+  border: 7px solid white;
   background-color: black;
   color: white;
   text-align: center;
-  font-size: 3.5vmin;
+  font-size: 2vw;
 }
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 6vmin;
+  font-size: 3.75vw;
+}
+.asideDiv:nth-child(even){
+  line-height: 8.75vmin;
 }
 .gameData{
   position: relative;
-  font-size: 6vmin;
+  font-size: 2.50vw;
 }
 .row{
   display: flex;
@@ -80,18 +93,19 @@ aside{
 .back, .front{
   position: absolute;
   height: 100%;
-  width: 160%;
+  width: 170%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25% 10%;
+}
+.front{
+
 }
 /* This is where all of the images for the cards are */
 .back{
   background-image: url(/assets/images/vine.png);
 }
-.back:hover{
-    transform: rotateY(8deg);
-}
+
 .wednesday{
   background-image: url(/assets/images/Its\ wednesday.gif);
 }
@@ -132,6 +146,7 @@ aside{
   left: 0;
   top: 0;
   width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
@@ -171,7 +186,7 @@ aside{
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 24rem;
+  width: 20vw;
   border-radius: 0.5rem;
 }
 .overlay-text{
@@ -180,7 +195,7 @@ aside{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 1;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(0, 0, 0, 1);
@@ -188,11 +203,186 @@ aside{
 }
 .fontStart{
   display: absolute;
-  font-size: 7vh;
+  font-size: 80px;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
 }
 .ripImg{
   position: relative;
-  left: 33vw;
+  left: 36%;
+}
+
+.flip{
+transform: rotateY(180deg);
+ perspective: 1000px;
+   transition: transform 0.8s;
+}
+
+@media only screen and (max-width: 2980px){
+    .card{
+    height: 10vw;
+    width: 6vw;
+  }
+  .memoryMatchTitle{
+    font-size: 5vw;
+  }
+}
+
+
+@media only screen and (max-width: 2112px){
+  .ripImg{
+  left: 33%;
+  }
+  .fontStart{
+  font-size: 60px;
+}
+  .row{
+    flex-wrap: wrap;
+  }
+    .card{
+    height: 11vw;
+    width: 6vw;
+  }
+
+.asideDiv:nth-child(odd){
+  line-height: 9vmin;
+
+}
+.asideDiv:nth-child(2){
+  line-height: 30px;
+}
+}
+@media only screen and (max-width: 1525px){
+  .ripImg{
+  left: 28%;
+  }
+  .fontStart{
+  font-size: 50px;
+}
+}
+@media only screen and (max-width: 1315px){
+.memoryMatchTitle{
+  font-size: 35px;
+}
+.asideDiv{
+  font-size: 25px;
+}
+/* .gameData{
+  font-size: 30px;
+} */
+.card{
+  height: 12vw;
+  width: 6.25vw;
+  margin: 0% 3.75%;
+}
+  .fontStart{
+  font-size: 37px;
+}
+  .ripImg{
+  left: 24vw;
+  }
+}
+
+@media only screen and (max-width: 817px){
+.asideDiv:nth-child(2){
+  line-height: 4vw;
+}
+.asideDiv{
+  font-size: 18px;
+}
+}
+ @media only screen and (max-width: 628px){
+.asideDiv:nth-child(odd){
+  line-height: 10vmin;
+  font-size: 20px;
+}
+.asideDiv:nth-child(even){
+  font-size: 10px;
+  line-height: 10vmin;
+}
+}
+@media only screen and (max-width: 540px){
+.asideDiv:nth-child(2){
+  line-height: 4vw;
+}
+}
+ @media only screen and (max-width: 415px){
+.memoryMatchTitle{
+  display: none;
+}
+.asidePlusMain{
+  display: flex;
+  flex-direction: column;
+  height:150vh
+}
+aside{
+  width:100%;
+  border-radius:8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family:  cursive;
+}
+.gameData{
+  position: relative;
+  font-size: 0;
+}
+  .fontStart{
+  font-size: 23px;
+  right: 6vw;
+}
+.asideDiv:nth-child(odd){
+  line-height: 10vmin;
+  font-size: 20px;
+}
+.asideDiv:nth-child(even){
+  line-height: 10vmin;
+  font-size: 10px;
+}
+.asideDiv:nth-child(2){
+  line-height: 5vmin;
+  font-size: 10px;
+}
+.asideDiv:nth-child(7){
+  font-size: 14px;
+}
+.gameSpace {
+    margin-top: 3vw;
+}
+.card{
+  height: 24vw;
+  width: 14vw;
+  margin-left: 7vw;
+  margin-top: 8px;
+  right: 4.5%;
+}
+.row{
+  height: 25%;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 0;
+}
+  .ripImg{
+  text-align: center;
+  top: 40vw;
+  width: 80vw;
+  left: 10%;
+  }
+  .fontStart{
+  position: relative;
+  top: 40vw;
+  font-size: 16px;
+  right:1vw;
+}
+.gameSpace{
+  height: 80%;
+  width:  100%;
+    display: flex;
+  flex-direction: column;
+}
+.asideDiv{
+  width:13vw;
+  border: 4px solid white;
+}
 }
