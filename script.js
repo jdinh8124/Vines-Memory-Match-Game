@@ -42,7 +42,7 @@ function initalizeApp(){
 }
 
 
-var handleCardClick = (event) =>{
+ handleCardClick = (event) =>{
   //The Lockboard if statements are to prevent the player from clicking on cards when the cards are being matched
   if(lockBoard){
     return;
@@ -82,26 +82,26 @@ var handleCardClick = (event) =>{
   }
 }
 //Math for the Side Div are bellow
-var calculateAccuracy = () => {
+calculateAccuracy = () => {
   let dividedStats = (matches /attempts  * 100).toFixed(2);
   return dividedStats;
 }
 
-var displayStats =() =>{
+displayStats =() =>{
   let acrruracyCalulation = calculateAccuracy();
   $(".gameAttempts").text(attempts);
   $(".gameAccuracy").text(acrruracyCalulation + '%');
   $(".gamesPlayed").text(games_played);
 }
 
-var resetStats = ()=>{
+ resetStats = ()=>{
   matches = null;
   attempts = null;
   $(".gameAttempts").text(0);
   $(".gameAccuracy").text( 0 + '%');
 }
   //dynamically create front and back divs to attatched to the cards on the HTML
-var makeCards = (imageArray) => {
+ makeCards = (imageArray) => {
   let foundImg;
   let pictureElements;
   let backElement;
@@ -115,7 +115,7 @@ var makeCards = (imageArray) => {
   return foundImg;
 }
   //function to create shuffled cards each round
-var shuffle = (array) => {
+  shuffle = (array) => {
   let currentIndex = array.length;
   let temporaryValue, randomIndex;
   while (0 !== currentIndex) {
