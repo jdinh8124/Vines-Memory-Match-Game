@@ -1,20 +1,20 @@
 $(document).ready(initalizeApp)
 
-var imagesArray = [
+let imagesArray = [
   'wednesday','okGif','lying', 'chickenGif', 'dancingGif', 'merryGif', 'highfiveGif', 'hatersGif', 'mcdsGif',
   'wednesday', 'okGif','lying','chickenGif', 'dancingGif', 'merryGif', 'highfiveGif','hatersGif', 'mcdsGif',
 ];
-var firstCardClicked = null;
-var secondCardClicked = null;
-var matches = null;
-var max_matches = 1;
-var attempts = 0;
-var games_played = 1;
-var lockBoard = false;
+let firstCardClicked = null;
+let secondCardClicked = null;
+let matches = null;
+let max_matches = 1;
+let attempts = 0;
+let games_played = 1;
+let lockBoard = false;
 
 function initalizeApp(){
   //Added relevant background music
-  var backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
+  let backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
   //dynamically make card fronts/back
   shuffle(imagesArray);
   makeCards(imagesArray);
@@ -42,7 +42,7 @@ function initalizeApp(){
 }
 
 
-function handleCardClick(event){
+var handleCardClick = (event) =>{
   //The Lockboard if statements are to prevent the player from clicking on cards when the cards are being matched
   if(lockBoard){
     return;
@@ -82,30 +82,30 @@ function handleCardClick(event){
   }
 }
 //Math for the Side Div are bellow
-function calculateAccuracy(){
-  var dividedStats = (matches /attempts  * 100).toFixed(2);
+var calculateAccuracy = () => {
+  let dividedStats = (matches /attempts  * 100).toFixed(2);
   return dividedStats;
 }
 
-function displayStats(){
-  var acrruracyCalulation = calculateAccuracy();
+var displayStats =() =>{
+  let acrruracyCalulation = calculateAccuracy();
   $(".gameAttempts").text(attempts);
   $(".gameAccuracy").text(acrruracyCalulation + '%');
   $(".gamesPlayed").text(games_played);
 }
 
-function resetStats(){
+var resetStats = ()=>{
   matches = null;
   attempts = null;
   $(".gameAttempts").text(0);
   $(".gameAccuracy").text( 0 + '%');
 }
   //dynamically create front and back divs to attatched to the cards on the HTML
-function makeCards(imageArray) {
-  var foundImg;
-  var pictureElements;
-  var backElement;
-  for (var loopThroughArray = 0; loopThroughArray < imageArray.length; loopThroughArray++) {
+var makeCards = (imageArray) => {
+  let foundImg;
+  let pictureElements;
+  let backElement;
+  for (let loopThroughArray = 0; loopThroughArray < imageArray.length; loopThroughArray++) {
     foundImg = imageArray[loopThroughArray];
     pictureElements = $("<div>").addClass("front " + foundImg);
     $("#card" + [loopThroughArray]).append(pictureElements);
@@ -115,9 +115,9 @@ function makeCards(imageArray) {
   return foundImg;
 }
   //function to create shuffled cards each round
-function shuffle(array) {
-  var currentIndex = array.length;
-  var temporaryValue, randomIndex;
+var shuffle = (array) => {
+  let currentIndex = array.length;
+  let temporaryValue, randomIndex;
   while (0 !== currentIndex) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
