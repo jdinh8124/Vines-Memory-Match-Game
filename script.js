@@ -13,17 +13,14 @@ let games_played = 1;
 let lockBoard = false;
 
 function initalizeApp(){
-  //Added relevant background music
   let backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
   //dynamically make card fronts/back
   shuffle(imagesArray);
   makeCards(imagesArray);
-  // Modal popup, goes away with click
   $(".overlay-text").on("click", function(){
     $(".overlay-text").addClass("hidden").removeClass("overlay-text"),
       backAudio.play();
   })
-  //Gives player the option to play again or refresh completely
   $(".card").on("click", handleCardClick);
   $(".refreshButton").click(function () {
     location.reload();
@@ -42,8 +39,7 @@ function initalizeApp(){
 }
 
 
- handleCardClick = (event) =>{
-  //The Lockboard if statements are to prevent the player from clicking on cards when the cards are being matched
+ const handleCardClick = (event) =>{
   if(lockBoard){
     return;
   }
@@ -60,14 +56,11 @@ function initalizeApp(){
     displayStats();
     lockBoard = true;
   }
-  //Checking to see if the fronts of the cards are the same to match
   if (firstCardClicked.find('.front').css('background-image') === secondCardClicked.find('.front').css('background-image')) {
     matches += 1;
     firstCardClicked = null;
     secondCardClicked = null;
     displayStats();
-    lockBoard = false;
-    //unnecessry false lockboard
     if((matches) === max_matches){
     $(".modal").addClass("showmodal")
   }
@@ -81,27 +74,25 @@ function initalizeApp(){
     }, 1500);
   }
 }
-//Math for the Side Div are bellow
-calculateAccuracy = () => {
+const calculateAccuracy = () => {
   let dividedStats = (matches /attempts  * 100).toFixed(2);
   return dividedStats;
 }
 
-displayStats =() =>{
+const displayStats =() =>{
   let acrruracyCalulation = calculateAccuracy();
   $(".gameAttempts").text(attempts);
   $(".gameAccuracy").text(acrruracyCalulation + '%');
   $(".gamesPlayed").text(games_played);
 }
 
- resetStats = ()=>{
+const resetStats = ()=>{
   matches = null;
   attempts = null;
   $(".gameAttempts").text(0);
   $(".gameAccuracy").text( 0 + '%');
 }
-  //dynamically create front and back divs to attatched to the cards on the HTML
- makeCards = (imageArray) => {
+const makeCards = (imageArray) => {
   let foundImg;
   let pictureElements;
   let backElement;
@@ -114,8 +105,7 @@ displayStats =() =>{
   }
   return foundImg;
 }
-  //function to create shuffled cards each round
-  shuffle = (array) => {
+const shuffle = (array) => {
   let currentIndex = array.length;
   let temporaryValue, randomIndex;
   while (0 !== currentIndex) {
