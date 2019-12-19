@@ -7,14 +7,13 @@ let imagesArray = [
 let firstCardClicked = null;
 let secondCardClicked = null;
 let matches = null;
-let max_matches = 1;
+let max_matches = 9;
 let attempts = 0;
 let games_played = 1;
 let lockBoard = false;
 
 function initalizeApp(){
   let backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
-  //dynamically make card fronts/back
   shuffle(imagesArray);
   makeCards(imagesArray);
   $(".overlay-text").on("click", function(){
@@ -61,6 +60,7 @@ function initalizeApp(){
     firstCardClicked = null;
     secondCardClicked = null;
     displayStats();
+    lockBoard = false;
     if((matches) === max_matches){
     $(".modal").addClass("showmodal")
   }
