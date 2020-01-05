@@ -16,15 +16,15 @@ function initalizeApp(){
   let backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
   shuffle(imagesArray);
   makeCards(imagesArray);
-  $(".overlay-text").on("click", function(){
+  $(".overlay-text").on("click", () => {
     $(".overlay-text").addClass("hidden").removeClass("overlay-text"),
       backAudio.play();
   })
   $(".card").on("click", handleCardClick);
-  $(".refreshButton").click(function () {
+  $(".refreshButton").click( ()  => {
     location.reload();
   });
-  $(".buttonPlayAgain").click(function () {
+  $(".buttonPlayAgain").click( () => {
     $(".front, .back").remove();
     shuffle(imagesArray);
     makeCards(imagesArray);
@@ -34,11 +34,9 @@ function initalizeApp(){
     resetStats();
     $(".gamesPlayed").text(games_played);
   });
-
 }
 
-
- const handleCardClick = (event) =>{
+ const handleCardClick = event => {
   if(lockBoard){
     return;
   }
@@ -65,7 +63,7 @@ function initalizeApp(){
     $(".modal").addClass("showmodal")
   }
   } else {
-    setTimeout(function () {
+    setTimeout( () => {
       firstCardClicked.find('.back').removeClass("hidden");
       secondCardClicked.find('.back').removeClass("hidden");
       firstCardClicked = null;
@@ -79,33 +77,32 @@ const calculateAccuracy = () => {
   return dividedStats;
 }
 
-const displayStats =() =>{
+const displayStats = () => {
   let acrruracyCalulation = calculateAccuracy();
   $(".gameAttempts").text(attempts);
   $(".gameAccuracy").text(acrruracyCalulation + '%');
   $(".gamesPlayed").text(games_played);
 }
 
-const resetStats = ()=>{
+const resetStats = () => {
   matches = null;
   attempts = null;
   $(".gameAttempts").text(0);
   $(".gameAccuracy").text( 0 + '%');
 }
 const makeCards = (imageArray) => {
-  let foundImg;
   let pictureElements;
   let backElement;
-  for (let loopThroughArray = 0; loopThroughArray < imageArray.length; loopThroughArray++) {
-    foundImg = imageArray[loopThroughArray];
-    pictureElements = $("<div>").addClass("front " + foundImg);
-    $("#card" + [loopThroughArray]).append(pictureElements);
-    backElement = $("<div>").addClass("back");
-    $("#card" + [loopThroughArray]).append(backElement);
-  }
-  return foundImg;
+  let counter = 0;
+  imageArray.map(pic => {
+      pictureElements = $("<div>").addClass("front " + pic);
+      $("#card" + [counter]).append(pictureElements);
+      backElement = $("<div>").addClass("back");
+      $("#card" + [counter]).append(backElement);
+      counter++
+  })
 }
-const shuffle = (array) => {
+const shuffle = array => {
   let currentIndex = array.length;
   let temporaryValue, randomIndex;
   while (0 !== currentIndex) {
