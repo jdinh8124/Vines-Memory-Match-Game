@@ -191,7 +191,6 @@ aside{
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(0, 0, 0, 1);
-  transition-delay: 1s;
 }
 .fontStart{
   display: absolute;
