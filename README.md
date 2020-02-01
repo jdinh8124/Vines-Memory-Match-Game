@@ -22,3 +22,8 @@ A JavaScript project that allows to user to engage in a memory match game that w
 ## Takeaways
 - The use of jQuery can make changes to the DOM fast and easy
 - Mobile responsiveness needs lots of work through media queries
+
+## Getting Started
+- For this repository to your github
+- Clone this repository on to your computer
+- Open the index.html file in your browser
