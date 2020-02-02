@@ -104,8 +104,10 @@ aside{
 }
 
 .wednesday{
-  background-image: url(../assets/images/Its\ wednesday.gif);
+  background-image: url(../assets/images/Itswednesday.gif);
 }
+
+
 .hidden{
   display: none;
   transition: 500ms ease-in-out;
@@ -114,7 +116,7 @@ aside{
   background-image: url(../assets/images/ok.gif);
 }
 .lying{
-  background-image: url(../assets/images/why\ you\ lying.gif);
+  background-image: url(../assets/images/whyyoulying.gif);
 
 }
 .chickenGif{
@@ -132,7 +134,7 @@ aside{
   background-image: url(../assets/images/high.gif);
 }
 .hatersGif{
-  background-image: url(../assets/images//blocking.gif);
+  background-image: url(../assets/images/blocking.gif);
 }
 .mcdsGif{
   background-image: url(../assets/images/mcds.gif);
