@@ -3,7 +3,7 @@
 > - Maintained by: `James Dinh - jdinh8124`
 
 ## Link To Live Project
-[Link To Vines Memory Match](vines-memory-match.jamestdinh.com)
+[Link To Vines Memory Match](https://vines-memory-match.jamestdinh.com)
 
 ## Summary
 A JavaScript project that allows to user to engage in a memory match game that was inspired by the end of the Vine culture
@@ -33,10 +33,24 @@ A JavaScript project that allows to user to engage in a memory match game that w
 - Mobile responsiveness needs lots of work through media queries
 
 ## Getting Started
-- For this repository to your github
-- Clone this repository on to your computer
-- Open the index.html file in your browser
-- Enjoy reliving the old days of the vine culture!
+1. Clone this repository on to your computer
+```
+git clone https://github.com/jdinh8124/Vines-Memory-Match-Game
+
+```
+2. Switch over to the correct repository
+```
+
+cd Vines-Memory-Match-Game
+
+```
+3. Right click and open the index.html file in your browser
+```
+
+run in default server
+
+```
+3. Enjoy reliving the old days of the vine culture!
 
 ## Live Demo
 ![Vines Memory Match Game](demo.gif)
