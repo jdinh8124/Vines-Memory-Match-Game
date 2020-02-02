@@ -2,6 +2,9 @@
 
 > - Maintained by: `James Dinh - jdinh8124`
 
+## Link To Live Project
+[Link To Vines Memory Match](vines-memory-match.jamestdinh.com)
+
 ## Summary
 A JavaScript project that allows to user to engage in a memory match game that was Vine inspired
 
@@ -29,3 +32,6 @@ A JavaScript project that allows to user to engage in a memory match game that w
 - For this repository to your github
 - Clone this repository on to your computer
 - Open the index.html file in your browser
+
+## Live Demo
+![Vines Memory Match Game](demo.gif)
