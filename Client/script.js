@@ -13,7 +13,6 @@ let games_played = 1;
 let lockBoard = false;
 
 function initalizeApp(){
-  let backAudio = new Audio('assets/sounds/Vanessa Carlton - A Thousand Miles (Official Instrumental).mp3');
   shuffle(imagesArray);
   makeCards(imagesArray);
   $(".overlay-text").on("click", () => {

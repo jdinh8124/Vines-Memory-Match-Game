@@ -2,7 +2,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #00b386;
-  background-image: url(../assets/images/vineminifest_1.png);
+  background-image: url(images/vineminifest_1.png);
   margin: 0;
   overflow: hidden;
 }
@@ -100,11 +100,11 @@ aside{
   animation: shake 1s;
 }
 .back{
-  background-image: url(../assets/images/vine.png);
+  background-image: url(images/vine.png);
 }
 
 .wednesday{
-  background-image: url(../assets/images/Itswednesday.gif);
+  background-image: url(images/Itswednesday.gif);
 }
 
 
@@ -113,31 +113,31 @@ aside{
   transition: 500ms ease-in-out;
 }
 .okGif{
-  background-image: url(../assets/images/ok.gif);
+  background-image: url(images/ok.gif);
 }
 .lying{
-  background-image: url(../assets/images/whyyoulying.gif);
+  background-image: url(images/whyyoulying.gif);
 
 }
 .chickenGif{
-  background-image: url(../assets/images/lookchickens.gif);
+  background-image: url(images/lookchickens.gif);
 }
 .dancingGif{
-  background-image: url(../assets/images/dancingtoheart.gif);
+  background-image: url(images/dancingtoheart.gif);
 
 }
 .merryGif{
-  background-image: url(../assets/images/merry.gif);
+  background-image: url(images/merry.gif);
 
 }
 .highfiveGif{
-  background-image: url(../assets/images/high.gif);
+  background-image: url(images/high.gif);
 }
 .hatersGif{
-  background-image: url(../assets/images/blocking.gif);
+  background-image: url(images/blocking.gif);
 }
 .mcdsGif{
-  background-image: url(../assets/images/mcds.gif);
+  background-image: url(images/mcds.gif);
 }
 /* Modals for the start of the game */
 .modal {
