@@ -8,6 +8,8 @@ A JavaScript project that allows to user to engage in a memory match game that w
 ## Languages Used
 - JavaScript
 - CSS
+- HTML5
+- CSS3
 
 ## Features
 - Users flip cards to see gifs they can potentially match
