@@ -6,22 +6,26 @@
 [Link To Vines Memory Match](vines-memory-match.jamestdinh.com)
 
 ## Summary
-A JavaScript project that allows to user to engage in a memory match game that was Vine inspired
+A JavaScript project that allows to user to engage in a memory match game that was inspired by the end of the Vine culture
 
-## Languages Used
+## Languages and Frameworks Used
 - JavaScript
 - CSS
 - HTML5
 - CSS3
+- jQuery
 
 ## Features
 - Users flip cards to see gifs they can potentially match
 - Users can play multiple games
 - Users can keep track of stats through the sidebar
+- Users can interact with css hover elements
 
 
 ## Planned Additions
 - More animiations and transitions
+- Keyframes implementation
+- Sound effects
 
 
 ## Takeaways
@@ -32,6 +36,7 @@ A JavaScript project that allows to user to engage in a memory match game that w
 - For this repository to your github
 - Clone this repository on to your computer
 - Open the index.html file in your browser
+- Enjoy reliving the old days of the vine culture!
 
 ## Live Demo
 ![Vines Memory Match Game](demo.gif)
