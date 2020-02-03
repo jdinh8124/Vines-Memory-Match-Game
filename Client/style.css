@@ -6,8 +6,9 @@ body{
   margin: 0;
   overflow: hidden;
 }
+
 .memoryMatchTitle{
-  height: 15vh;
+  height: 13vh;
   font-size: 105px;
   text-align: center;
   font-family: 'Prata', serif;
@@ -154,7 +155,6 @@ aside{
 
 .buttonPlayAgain{
   position: relative;
-  left: 3vmin;
   width: 19.5vmin;
   line-height: 3.5vmin;
   cursor: pointer;
@@ -163,8 +163,8 @@ aside{
 }
 .refreshButton{
   position: relative;
-  left: 6vmin;
-  width: 10.5vmin;
+  left: 4vmin;
+  width: 19.5vmin;
   line-height: 3.5vmin;
   cursor: pointer;
   border-radius: 0.25rem;
@@ -203,6 +203,10 @@ aside{
 .ripImg{
   position: relative;
   left: 36%;
+}
+.showmodal{
+  visibility: visible;
+  opacity: 1;
 }
 @media only screen and (max-width: 2980px){
     .card{
@@ -253,10 +257,14 @@ aside{
   .asideDiv:nth-child(2){
   line-height: 4vw;
 }
+   .modal-content{
+     width:32vw;
+   }
+
 }
 @media only screen and (max-width: 1315px){
 .memoryMatchTitle{
-  font-size: 35px;
+  font-size: 39px;
 }
 .asideDiv{
   font-size: 25px;
@@ -281,6 +289,14 @@ aside{
 .asideDiv:nth-child(2){
   line-height: 4vw;
 }
+.asideDiv:nth-child(7){
+  font-size: 3vw;
+}
+
+   .modal-content{
+     width:43vw;
+   }
+
 }
 @media only screen and (max-width: 817px){
 .asideDiv:nth-child(2){
@@ -302,6 +318,12 @@ aside{
 .asideDiv:nth-child(odd) {
     font-size: 4vw;
 }
+.asideDiv:nth-child(7){
+  font-size: 3vw;
+}
+
+
+
 }
  @media only screen and (max-width: 628px){
 .asideDiv:nth-child(odd){
@@ -319,6 +341,13 @@ aside{
 }
 }
  @media only screen and (max-width: 415px){
+   .modal-content{
+     width:40vw;
+   }
+   .refreshButton{
+     width:17.5vmin;
+
+   }
 .memoryMatchTitle{
   display: none;
 }
