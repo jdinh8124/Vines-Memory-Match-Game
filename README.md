@@ -10,7 +10,6 @@ A JavaScript project that allows to user to engage in a memory match game that w
 
 ## Languages and Frameworks Used
 - JavaScript
-- CSS
 - HTML5
 - CSS3
 - jQuery
@@ -47,7 +46,7 @@ cd Vines-Memory-Match-Game
 3. Right click and open the index.html file in your browser
 ```
 
-run in default server
+right click the index.html file and run in default server
 
 ```
 3. Enjoy reliving the old days of the vine culture!
