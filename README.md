@@ -49,7 +49,7 @@ cd Vines-Memory-Match-Game
 right click the index.html file and run in default server
 
 ```
-3. Enjoy reliving the old days of the vine culture!
+4. Enjoy reliving the old days of the vine culture!
 
 ## Live Demo
 ![Vines Memory Match Game](demo.gif)
