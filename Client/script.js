@@ -17,7 +17,6 @@ function initalizeApp(){
   makeCards(imagesArray);
   $(".overlay-text").on("click", () => {
     $(".overlay-text").addClass("hidden").removeClass("overlay-text"),
-      backAudio.play();
   })
   $(".card").on("click", handleCardClick);
   $(".refreshButton").click( ()  => {
