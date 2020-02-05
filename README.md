@@ -34,6 +34,7 @@ A JavaScript project that allows to user to engage in a memory match game that w
 ## Getting Started
 1. Clone this repository on to your computer
 ```
+
 git clone https://github.com/jdinh8124/Vines-Memory-Match-Game
 
 ```
