@@ -241,7 +241,7 @@ aside{
 
 }
 .asideDiv:nth-child(2){
-  line-height: 30px;
+  line-height: 67px;
 }
 }
 @media only screen and (max-width: 1525px){
