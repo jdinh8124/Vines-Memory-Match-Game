@@ -185,7 +185,7 @@ aside{
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 20vw;
+  width: 21vw;
   border-radius: 0.5rem;
 }
 .overlay-text{
@@ -350,7 +350,7 @@ aside{
 }
  @media only screen and (max-width: 415px){
    .modal-content{
-     width:40vw;
+     width:42vw;
    }
    .refreshButton{
      width:17.5vmin;
