@@ -19,9 +19,6 @@ function initalizeApp(){
     $(".overlay-text").addClass("hidden").removeClass("overlay-text")
   })
   $(".card").on("click", handleCardClick);
-  $(".refreshButton").click( ()  => {
-    location.reload();
-  });
   $(".buttonPlayAgain").click( () => {
     $(".front, .back").remove();
     shuffle(imagesArray);
@@ -41,7 +38,10 @@ function initalizeApp(){
   if ($(event.currentTarget).find(".back").hasClass('hidden')) {
     return;
   }
-  $(event.currentTarget).find('.back').addClass("hidden");
+   $(event.currentTarget).find('.back').addClass("hidden");
+   console.log(event.currentTarget)
+   $(event.currentTarget).addClass("card-flipped");
+
   if (firstCardClicked === null) {
       firstCardClicked = $(event.currentTarget);
       return;
@@ -64,6 +64,8 @@ function initalizeApp(){
     setTimeout( () => {
       firstCardClicked.find('.back').removeClass("hidden");
       secondCardClicked.find('.back').removeClass("hidden");
+      firstCardClicked.removeClass('card-flipped')
+      secondCardClicked.removeClass('card-flipped')
       firstCardClicked = null;
       secondCardClicked = null;
       lockBoard = false;
