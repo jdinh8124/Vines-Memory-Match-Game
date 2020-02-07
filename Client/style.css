@@ -66,9 +66,12 @@ aside{
   line-height: 9vmin;
   font-size: 3.75vw;
 }
+.asideDiv:nth-child(7){
+  font-size: 3.25vw;
+}
 .asideDiv:nth-child(even){
   line-height: 8.75vmin;
-}
+}s
 .gameData{
   position: relative;
   font-size: 2.50vw;
@@ -100,6 +103,9 @@ aside{
 }
 .card:hover{
   animation: shake 1s;
+}
+.card-flipped:hover{
+  animation: none;
 }
 .back{
   background-image: url(images/vine.png);
@@ -185,7 +191,7 @@ aside{
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 21vw;
+  width: 9.5vw;
   border-radius: 0.5rem;
 }
 .overlay-text{
@@ -266,7 +272,7 @@ aside{
     font-size: 3.2vw;
 }
    .modal-content{
-     width:32vw;
+     width:20vmin;
    }
 
 }
@@ -302,7 +308,7 @@ aside{
 }
 
    .modal-content{
-     width:43vmin;
+     width:19vmin;
    }
 
 }
@@ -350,7 +356,7 @@ aside{
 }
  @media only screen and (max-width: 415px){
    .modal-content{
-     width:42vw;
+     width:20vw;
    }
    .refreshButton{
      width:17.5vmin;
