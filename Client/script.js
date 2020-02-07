@@ -19,9 +19,6 @@ function initalizeApp(){
     $(".overlay-text").addClass("hidden").removeClass("overlay-text")
   })
   $(".card").on("click", handleCardClick);
-  $(".refreshButton").click( ()  => {
-    location.reload();
-  });
   $(".buttonPlayAgain").click( () => {
     $(".front, .back").remove();
     shuffle(imagesArray);

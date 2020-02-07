@@ -170,17 +170,6 @@ aside{
   border-radius: 10%;
   font: 1.1rem serif;
 }
-.refreshButton{
-  position: relative;
-  left: 4vmin;
-  width: 19.5vmin;
-  line-height: 3.5vmin;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: red;
-  border-radius: 10%;
-  font: 1.1rem serif;
-}
 .winGame{
   width: 100%;
 }
@@ -357,10 +346,6 @@ aside{
  @media only screen and (max-width: 415px){
    .modal-content{
      width:20vw;
-   }
-   .refreshButton{
-     width:17.5vmin;
-
    }
 .memoryMatchTitle{
   display: none;
