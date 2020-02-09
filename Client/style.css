@@ -353,7 +353,7 @@ aside{
 .asidePlusMain{
   display: flex;
   flex-direction: column;
-  height:150vh
+  height:130vh
 }
 aside{
   width:100%;
@@ -386,8 +386,8 @@ aside{
     margin-top: 3vw;
 }
 .card{
-  height: 24vw;
-  width: 14vw;
+  height: 20vw;
+  width: 12.5vw;
   margin-left: 7vw;
   margin-top: 8px;
   right: 4.5%;
