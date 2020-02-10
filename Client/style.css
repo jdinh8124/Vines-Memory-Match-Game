@@ -8,6 +8,10 @@ body{
   background-position: center;
 }
 
+   .good-job{
+     width: 100%;
+   }
+
 .memoryMatchTitle{
   height: 13vh;
   font-size: 105px;
@@ -169,6 +173,7 @@ aside{
   background-color: limegreen;
   border-radius: 10%;
   font: 1.1rem serif;
+
 }
 .winGame{
   width: 100%;
@@ -180,8 +185,9 @@ aside{
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 9.5vw;
+      width:50vw;
   border-radius: 0.5rem;
+  text-align: center;
 }
 .overlay-text{
   position: fixed;
@@ -261,7 +267,7 @@ aside{
     font-size: 3.2vw;
 }
    .modal-content{
-     width:20vmin;
+     /* width:20vmin; */
    }
 
 }
@@ -271,6 +277,7 @@ aside{
 }
 .asideDiv{
   font-size: 25px;
+  border: 2px solid white;
 }
 
 .card{
@@ -297,9 +304,16 @@ aside{
 }
 
    .modal-content{
-     width:19vmin;
+     /* width:19vmin; */
    }
 
+}
+
+@media only screen and (max-width: 1050px){
+
+.asideDiv{
+  border: 4px solid white;
+}
 }
 @media only screen and (max-width: 817px){
 .asideDiv:nth-child(2){
@@ -344,9 +358,7 @@ aside{
 }
 }
  @media only screen and (max-width: 415px){
-   .modal-content{
-     width:20vw;
-   }
+
 .memoryMatchTitle{
   display: none;
 }
