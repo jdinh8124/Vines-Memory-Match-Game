@@ -68,7 +68,7 @@ aside{
 }
 .asideDiv:nth-child(odd){
   line-height: 9vmin;
-  font-size: 3.75vw;
+  font-size: 3.55vw;
 }
 .asideDiv:nth-child(7){
   font-size: 3.25vw;
@@ -266,9 +266,7 @@ aside{
   .asideDiv:nth-child(7){
     font-size: 3.2vw;
 }
-   .modal-content{
-     /* width:20vmin; */
-   }
+
 
 }
 @media only screen and (max-width: 1315px){
@@ -294,7 +292,7 @@ aside{
   height: 30vw;
   }
   .asideDiv:nth-child(odd) {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 .asideDiv:nth-child(2){
   line-height: 4vw;
