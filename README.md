@@ -29,7 +29,7 @@ A JavaScript project that allows to user to engage in a memory match game that w
 
 ## Takeaways
 - The use of jQuery can make changes to the DOM fast and easy
-- Mobile responsiveness needs lots of work through media queries
+- Mobile responsiveness needs lots of attention through media queries, it is best to start with a mobile responsive design in mind
 
 ## Getting Started
 1. Clone this repository on to your computer
