@@ -25,6 +25,7 @@ A JavaScript project that allows to user to engage in a memory match game that w
 - More animiations and transitions
 - Keyframes implementation
 - Sound effects
+- Card flip animations 
 
 
 ## Takeaways
