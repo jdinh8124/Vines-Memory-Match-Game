@@ -26,6 +26,7 @@ A JavaScript project that allows to user to engage in a memory match game that w
 - Keyframes implementation
 - Sound effects
 - Card flip animations 
+- Sass & Motion UI
 
 
 ## Takeaways
@@ -45,6 +46,7 @@ git clone https://github.com/jdinh8124/Vines-Memory-Match-Game
 cd Vines-Memory-Match-Game
 
 ```
+
 3. Right click and open the index.html file in your browser
 ```
 
