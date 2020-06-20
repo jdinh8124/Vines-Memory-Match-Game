@@ -6,7 +6,7 @@
 [Link To Vines Memory Match](https://vines-memory-match.jamestdinh.com)
 
 ## Summary
-A JavaScript project that allows to user to engage in a memory match game that was inspired by the end of the Vine culture
+A JavaScript project that allows users to engage in a memory match game that was inspired by the end of the Vine culture
 
 ## Languages and Frameworks Used
 - JavaScript
